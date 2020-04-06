@@ -148,4 +148,13 @@ public class SolverBehavior : MonoBehaviour
     {
         return payout[first + second + third - 6];
     }
+
+    #region rowButton hover functions
+    public void HoverVertical1()
+    {
+        //gridButtons[0].Dostat;
+    }
+
+    #endregion
+
 }
