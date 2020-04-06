@@ -300,7 +300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 36830e9a4a0e3f746b59d370ddc18072, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -343,6 +343,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &168427418
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 4ee62d9c55a59ce47ab57cb88b2bdcac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -813,6 +817,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &472225376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,8 +1448,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.7019774e-38, y: 2.7105054e-20, z: 2.3509887e-38,
-    w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.8189893e-12, z: 0, w: 1.8e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1781,7 +1788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 36830e9a4a0e3f746b59d370ddc18072, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1824,6 +1831,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: d070ee09ca45bb84cbbcfc1ad083d44d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2404,6 +2415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1299125229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,7 +2598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 76773d2c07e805542a85f9a354c3b937, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2626,6 +2641,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1457422888
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,7 +3454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 36830e9a4a0e3f746b59d370ddc18072, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3478,6 +3497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1724770031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,7 +3680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 76773d2c07e805542a85f9a354c3b937, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3700,6 +3723,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1975210490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,7 +4116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 76773d2c07e805542a85f9a354c3b937, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4132,6 +4159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bc2a40b4f0d2841acf432d5ec6d992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childButtons:
+  - {fileID: 1565217512}
+  - {fileID: 1975210495}
+  - {fileID: 263732237}
 --- !u!1 &2124100161
 GameObject:
   m_ObjectHideFlags: 0

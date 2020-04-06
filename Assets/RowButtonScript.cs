@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RowButtonScript : MonoBehaviour
 {
-    GridButtonScript[] childButtons = new GridButtonScript[3];
+    public GridButtonScript[] childButtons = new GridButtonScript[3];
     // Start is called before the first frame update
     void Start()
     {
