@@ -7,6 +7,8 @@ public class GridButtonScript : MonoBehaviour
 {
     public Image buttonImage;
     public Color defaultColor;
+    public int[] gridID = new int[2];
+    public SolverBehavior solver;
 
     // Start is called before the first frame update
     void Start()
@@ -28,5 +30,10 @@ public class GridButtonScript : MonoBehaviour
     public void ReleaseHighLight()
     {
         buttonImage.color = defaultColor;
+    }
+
+    public void OpenAttempt()
+    {
+        solver.OpenAttempt(gridID);
     }
 }

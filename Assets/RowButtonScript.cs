@@ -6,6 +6,9 @@ using UnityEngine;
 public class RowButtonScript : MonoBehaviour
 {
     public GridButtonScript[] childButtons = new GridButtonScript[3];
+    public int[] childGridNumbers = new int[3];
+    public SolverBehavior solver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class RowButtonScript : MonoBehaviour
         foreach(GridButtonScript btn in childButtons)
         {
             btn.HighLightIt();
+            Debug.Log("test001");
         }
     }
 
@@ -31,6 +35,12 @@ public class RowButtonScript : MonoBehaviour
         foreach (GridButtonScript btn in childButtons)
         {
             btn.ReleaseHighLight();
+            Debug.Log("test002");
         }
+    }
+
+    public int[] ReturnCombinedNumber()
+    {
+        return childGridNumbers;
     }
 }

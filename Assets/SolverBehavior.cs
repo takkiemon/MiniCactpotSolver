@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class SolverBehavior : MonoBehaviour
 {
-    //int[,] grid = new int[3,3];
     public int attemptsLeft = 3;
     public int[,] trueGrid = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
     public bool[,] visibleGrid = { { false, false, false }, { false, false, false }, { false, false, false } };
@@ -57,7 +56,7 @@ public class SolverBehavior : MonoBehaviour
         gridString = new StringBuilder("");
         CleanButtonTexts();
         FillGrid();
-        PrintGrid(true);
+        //PrintGrid(false);
         UpdateGrid();
     }
 
@@ -139,6 +138,24 @@ public class SolverBehavior : MonoBehaviour
         }
     }
 
+    public void OpenAttempt(int x, int y)
+    {
+        if (attemptsLeft > 0 && !visibleGrid[x,y])
+        {
+            attemptsLeft--;
+            visibleGrid[x, y] = true;
+        }
+    }
+
+    public void OpenAttempt(int[] position)
+    {
+        if (attemptsLeft > 0 && !visibleGrid[position[0], position[1]])
+        {
+            attemptsLeft--;
+            visibleGrid[position[0], position[1]] = true;
+        }
+    }
+
     public float GetPayout(int sumOfRow)
     {
         return payout[sumOfRow - 6];
@@ -148,13 +165,4 @@ public class SolverBehavior : MonoBehaviour
     {
         return payout[first + second + third - 6];
     }
-
-    #region rowButton hover functions
-    public void HoverVertical1()
-    {
-        //gridButtons[0].Dostat;
-    }
-
-    #endregion
-
 }
