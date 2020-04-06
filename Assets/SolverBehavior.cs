@@ -52,11 +52,12 @@ public class SolverBehavior : MonoBehaviour
     public void RestartGame()
     {
         attemptsLeft = 3;
-        trueGrid = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }; //{ { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        trueGrid = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         visibleGrid = new bool[,] { { false, false, false }, { false, false, false }, { false, false, false } };
         gridString = new StringBuilder("");
         FillGrid();
         PrintGrid(true);
+        UpdateGrid();
     }
 
     float CalculateAverages(int first, int second, int third) // wip
@@ -109,11 +110,29 @@ public class SolverBehavior : MonoBehaviour
 
     public void UpdateGrid()
     {
-        for (int i = 0; i < )
+        for (int j = 0; j < 3; j++)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                if (visibleGrid[i, j])
+                {
+                    gridButtons[j * 3 + i].GetComponentInChildren<Text>().text = trueGrid[i, j].ToString();
+                }
+                else
+                {
+                    gridButtons[j * 3 + i].GetComponentInChildren<Text>().text = "";
+                }
+            }
+        }
     }
 
-    float GetPayout(int sumOfRow)
+    public float GetPayout(int sumOfRow)
     {
         return payout[sumOfRow - 6];
+    }
+
+    public float GetPayout(int first, int second, int third)
+    {
+        return payout[first + second + third - 6];
     }
 }
