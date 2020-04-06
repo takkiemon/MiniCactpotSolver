@@ -55,6 +55,7 @@ public class SolverBehavior : MonoBehaviour
         trueGrid = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         visibleGrid = new bool[,] { { false, false, false }, { false, false, false }, { false, false, false } };
         gridString = new StringBuilder("");
+        CleanButtonTexts();
         FillGrid();
         PrintGrid(true);
         UpdateGrid();
@@ -63,6 +64,18 @@ public class SolverBehavior : MonoBehaviour
     float CalculateAverages(int first, int second, int third) // wip
     {
         return payout[first + second + third];
+    }
+
+    public void CleanButtonTexts()
+    {
+        foreach(Button gridBtn in gridButtons)
+        {
+            gridBtn.GetComponentInChildren<Text>().text = "";
+        }
+        foreach(Button rowBtn in rowButtons)
+        {
+            rowBtn.GetComponentInChildren<Text>().text = "";
+        }
     }
 
     public void FillGrid()
