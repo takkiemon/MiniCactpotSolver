@@ -22,6 +22,11 @@ public class GridButtonScript : MonoBehaviour
         
     }
 
+    public void GetClicked()
+    {
+
+    }
+
     public void HighLightIt()
     {
         buttonImage.color = new Color(178, 178, 178);

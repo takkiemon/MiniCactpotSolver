@@ -24,7 +24,7 @@ public class SolverBehavior : MonoBehaviour
         1080, 144, 1800, 3600 // 20-24
     };
 
-    public enum gridRows
+    public enum GridRows
     {
         VerticalRow1,
         VerticalRow2,
@@ -32,8 +32,8 @@ public class SolverBehavior : MonoBehaviour
         HorizontalRow1,
         HorizontalRow2,
         HorizontalRow3,
-        DiagonalRowLeft, 
-        DiagonalRowRight
+        DiagonalRowTopLeft,
+        DiagonalRowTopRight
     }
 
     // Start is called before the first frame update
@@ -45,7 +45,20 @@ public class SolverBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        GridRows row = GridRows.VerticalRow1;
+        switch(row)
+        {
+            case GridRows.VerticalRow1:
+                Debug.Log("asdf");
+                break;
+            case GridRows.VerticalRow2:
+                Debug.Log("asdf");
+                break;
+            default:
+                break;
+        }
+        */
     }
 
     public void RestartGame()
@@ -55,7 +68,7 @@ public class SolverBehavior : MonoBehaviour
         visibleGrid = new bool[,] { { false, false, false }, { false, false, false }, { false, false, false } };
         gridString = new StringBuilder("");
         CleanButtonTexts();
-        FillGrid();
+        //FillGrid();
         //PrintGrid(false);
         UpdateGrid();
     }
@@ -136,6 +149,16 @@ public class SolverBehavior : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ReceiveGridClick(int x, int y)
+    {
+
+    }
+
+    public void ReceiveRowwClick(int x, int y)
+    {
+
     }
 
     public void OpenAttempt(int x, int y)

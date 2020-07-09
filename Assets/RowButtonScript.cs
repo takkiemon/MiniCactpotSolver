@@ -8,6 +8,7 @@ public class RowButtonScript : MonoBehaviour
     public GridButtonScript[] childButtons = new GridButtonScript[3];
     public int[] childGridNumbers = new int[3];
     public SolverBehavior solver;
+    public SolverBehavior.GridRows gridRowType;
 
     // Start is called before the first frame update
     void Start()
